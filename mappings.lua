@@ -18,6 +18,10 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+    ["gt"] = { "<cmd>:bnext<cr>"},
+    ["gj"] = { "<cmd>:bprevious<cr>"},
+    ["g1"] = { "<cmd>:bfirst<cr>"},
+    ["g0"] = { "<cmd>:blast<cr>"},
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<leader>a"] = { "<cmd>echo 'Hello World!'<cr>", desc = "Say hello world"}
